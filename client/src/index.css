@@ -1,0 +1,53 @@
+@import "tailwindcss";
+/* =========================
+   HEATMAP COLORS
+========================= */
+
+/* =========================
+   HEATMAP
+========================= */
+
+.react-calendar-heatmap .color-empty {
+  fill: #e5e7eb;
+}
+
+.react-calendar-heatmap .color-github-1 {
+  fill: #93c5fd;
+}
+
+.react-calendar-heatmap .color-github-2 {
+  fill: #60a5fa;
+}
+
+.react-calendar-heatmap .color-github-3 {
+  fill: #2563eb;
+}
+
+.react-calendar-heatmap .color-github-4 {
+  fill: #1e3a8a;
+}
+
+/* BLOCK SIZE */
+
+.react-calendar-heatmap rect {
+  width: 14px;
+  height: 14px;
+  rx: 4;
+  ry: 4;
+}
+
+/* MONTH TEXT */
+
+.react-calendar-heatmap text {
+  font-size: 11px;
+  fill: #555;
+  font-weight: bold;
+}
+
+/* HOVER */
+
+.react-calendar-heatmap rect:hover {
+  stroke: #000;
+  stroke-width: 2px;
+  cursor: pointer;
+}
