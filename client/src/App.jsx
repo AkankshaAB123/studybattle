@@ -88,7 +88,7 @@ function App() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/auth/login",
+        "https://studybattle-2.onrender.com/auth/login",
         loginData
       );
 
@@ -127,7 +127,7 @@ function App() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/study"
+        "https://studybattle-2.onrender.com/study"
       );
 
       setStudyData(res.data);
@@ -168,7 +168,7 @@ function App() {
       if (editId) {
 
         await axios.put(
-          `http://localhost:5000/study/${editId}`,
+          `https://studybattle-2.onrender.com/study/${editId}`,
           studyEntry
         );
 
@@ -180,7 +180,7 @@ function App() {
 
         // ADD
         await axios.post(
-          "http://localhost:5000/study/add",
+          "https://studybattle-2.onrender.com/study/add",
           studyEntry
         );
 
@@ -239,7 +239,7 @@ function App() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/study/${id}`
+        `https://studybattle-2.onrender.com/study/${id}`
       );
 
       fetchStudyData();
